@@ -1,0 +1,30 @@
+<!--------portfolio---->
+<section id="portfolio">
+  <h1 translate>Portfolio</h1>
+  <div class="heading">
+    <h3 translate>My Amazing Work</h3>
+    <p translate>A collection of websites made with different technologies. <br translate>
+      and some other projects related to algorithms and data structures.
+    </p>
+  </div>
+
+  <div class="portfolio-content ">
+    <div class="card" *ngFor="let item of PORTFOLIO">
+      <div class="card-inner">
+        <div class="front-side">
+
+          <img src="assets/image/work-3.png" alt="">
+        </div>
+        <div class="back-side">
+          <h2>{{item.title}}</h2>
+          <p>{{item.description}}</p>
+          <div class="social">
+            <a href="{{item.link}}" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://github.com/SamAudai?tab=repositories" target="_blank" class="btn btn-2" translate>see more</a>
+</section>

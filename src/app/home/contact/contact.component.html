@@ -1,0 +1,26 @@
+<!--------contact---->
+<section id="contact">
+  <h1 translate>Contact</h1>
+  <div class="contact">
+    <div class="container">
+      <div class="center">
+        <h3 translate>Let's talk about everything</h3>
+        <p translate>Don't like forms? Send me an email.</p>
+      </div>
+
+      <div class="action">
+        <form>
+          <input type="text" name="name" #name [placeholder]="nplaceHolder|translate" [(ngModel)]="textValue"/>
+          <input type="email" name="email" #email [placeholder]="eplaceHolder|translate" required />          
+          <textarea type="textarea" required [placeholder]="tplaceHolder|translate"></textarea>                   
+        </form>
+        <input type="submit" class="btn" name="submit" [value]="submit|translate">
+      </div>
+    </div>
+  </div>
+
+  <!--------ends---->
+  <div class="ends">
+    <p translate>Made by Eng. Audai Salman Alsharani © 2023</p>
+  </div>
+</section>

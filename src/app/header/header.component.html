@@ -1,0 +1,23 @@
+<!--------header---->
+<header [class.sticky]="isSticky"><!-- class data binding -->
+    <a routerLink="/home" class="logo"><img src={{$source}}></a>
+
+    <a class="fas fa-bars menu-icon" (click)="toggleMenu()" #list></a>
+
+    <ul class="navlist" [class.active]="isMenuOpen" #list><!-- [ngClass]="{'active': isMenuOpen}" -->
+        <li><a routerLink="/home" (click)="toggleMenu()" translate>Home</a></li>
+        <li><a routerLink="/about" (click)="toggleMenu()" translate>About</a></li>
+        <li><a routerLink="/portfolio" (click)="toggleMenu()" translate>Portfolio</a></li>
+        <li><a routerLink="/services" (click)="toggleMenu()" translate>Service</a></li>
+        <li><a routerLink="/contact" (click)="toggleMenu()" translate>Contact</a></li>        
+    </ul>    
+
+    <div class="tool-list">
+        <!-- property data binding -->
+        <img [src]="source" (click)="toggleLightTheme()" #list>
+        <select (change)="this.languageService.changeLanguage($any($event.target).value)" #list>
+            <option value="en" [attr.selected]="language === 'en'" translate>English</option>
+            <option value="ar" [selected]="language === 'ar'" translate>Arabic</option>
+        </select>
+    </div>
+</header>

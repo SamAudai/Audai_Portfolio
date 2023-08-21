@@ -1,0 +1,102 @@
+/*====================== Header Component Style =====================*/
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 20px;
+    transition: .5s;
+
+}
+
+.logo img {
+    max-width: 100%;
+    width: 210px;
+    height: auto;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist li {
+    position: relative;
+}
+
+.navlist li a {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 27px;
+}
+
+.navlist li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 0;
+    transition: ease-in-out .5s;
+}
+
+.navlist li a:hover::after {
+    width: 100%;
+}
+
+.tool-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.tool-list img {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 30px;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+
+.tool-list select {
+    margin-left: 0rem;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+    font-family: var(--en-font);
+}
+
+.menu-icon {
+    font-size: 25px;
+    color: var(--bg-color);
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+
+header.sticky {
+    background: var(--bg-color);
+    padding: 13px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 970px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navlist.active {
+        top: 100%;
+    }
+}
