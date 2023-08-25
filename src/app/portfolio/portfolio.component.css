@@ -1,0 +1,39 @@
+
+h1 {
+    font-size: var(--h1-font);
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.1;
+    color: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: var(--h2-font);
+    font-weight: 500;
+    margin: 7px 0px 20px;
+    line-height: 1.1;
+}
+
+.heading h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.heading p {
+    font-size: var(--p-font);
+    color: var(--font-color);
+    line-height: 28px;
+}
+
+.btn-2 {
+    display: block;
+    margin: 30px auto;
+    width: fit-content;    
+    
+}

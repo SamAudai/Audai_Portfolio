@@ -9,7 +9,7 @@ export interface Iservice{
 export const service:Array<Iservice>=[
     {
         id: 0,
-        title: "Web Design",
+        title: "Web Design and Development",
         description: "Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development ...",
         price: "$49",
         image: "assets/image/web_design.svg"

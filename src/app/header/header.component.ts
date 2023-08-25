@@ -21,11 +21,9 @@ export class HeaderComponent implements AfterViewInit, OnInit, AfterViewChecked,
 
   source: string = "";
   language: string = "";
-  mode: string = "";
+  mode: string = "";  
   
-  isMenuOpen: boolean = false;
   isSticky: boolean = false;
-
   private _isChange: boolean = false;
 
   @Input('source') $source!: string;  
@@ -130,16 +128,10 @@ export class HeaderComponent implements AfterViewInit, OnInit, AfterViewChecked,
     this.source  = localStorage.getItem('icon') as string;
     
     this.newStatus.emit(!this._isChange);
-  }       
+  } 
   
-
   @HostListener('window:scroll') onWindowScroll() {
     this.isSticky = (window.scrollY > 0);    
-  }
-  
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
+  }  
 
 }

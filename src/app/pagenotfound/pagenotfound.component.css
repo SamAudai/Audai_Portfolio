@@ -1,0 +1,16 @@
+
+h1 {
+    font-size: var(--h1-font);
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.1;
+    color: var(--main-color);
+}
+
+.btn-2 {
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    border: none;    
+}

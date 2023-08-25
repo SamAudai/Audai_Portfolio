@@ -32,7 +32,7 @@
    "and some other projects related to algorithms and data structures.":"وبعض المشاريع الأخرى المتعلقة بالخوارزميات و بنى المعطيات",
    "see more":"المزيد ...",
 
-   "Web Design":"تصميم تطبيقات الويب",
+   "Web Design and Development":"تصميم و تطوير تطبيقات الويب",
    "Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development ...":" تصميم الويب هو تصميم مواقع الويب التي يتم عرضها على الإنترنت. يشير عادةً إلى جوانب تجربة المستخدم في تطوير موقع الويب ...",
    "Software Engineering":"هندسة البرمجيات",
    "I have experience in agile software development and lean development, in addition to mastering some engineering practices to build quality in software ...":"لدي خبرة في تطوير البرمجيات الرشيقة والتطوير الخالي من الهدر ، بالإضافة إلى إتقان بعض الممارسات الهندسية لبناء الجودة في البرمجيات ...",
@@ -55,5 +55,21 @@
    "Your Name":"ادخل اسمك",
    "Welcome":"أهلا بك يا: ",
    "Your Message":"اكتب رسالتك",
-   "Submit":"تسليم"
+   "submit":"تسليم",
+
+   "Portfolio Website":"موقع محفظة الأعمال",
+   "A personal website to display the completed works and services, implemented by the Angular framework with a fake server":"موقع شخصي لعرض الأعمال والخدمات المنجزة .تم تنفيذه بإطار عمل Angular و بسيرفر وهمي",
+   "Resume Website":"موقع السيرة الذاتية",
+   "The site is a resume, implemented by Angular framework with a fake server":"موقع السيرة الذاتية. تم تنفيذه بإطار العمل Angular وبسيرفر وهمي",
+   "Restaurant Frontend":"واجهة أمامية لموقع مطعم",
+   "The site is a restaurant serving meals and booking tables. The front end was implemented by the Angular framework":"الموقع عبارة عن مطعم يقدم الوجبات وحجز الطاولات. تم تنفيذ الواجهة الأمامية بواسطة إطار العمل  Angular",
+   "Restaurant backend":"واجهة خلفية لموقع مطعم",
+   "The site is a restaurant serving meals and booking tables, the backend was implemented by NodeJS and Express framework and the Mongo database":"الموقع عبارة عن مطعم يقدم الوجبات وحجز الطاولات، تم تنفيذ الواجهة الخلفية بواسطة إطار عمل NodeJS ,Express وقاعدة بيانات Mongo",
+   "This project is portfolio website that created using .Net core and sql server":"هذا المشروع عبارة عن موقع ويب لمحفظة الأعمال، تم إنشاؤه باستخدام Net core.  و  SQL Server",
+   "Animation Website":"موقع بسيط عن التحريك",
+   "Simple animations website using Html, CSS and JavaScript":"موقع رسوم متحركة بسيط باستخدام Html ,  CSS  JavaScript",
+
+   "Page Not Found":"الصفحة غير موجودة",
+   "Go to Home Page":"الصفحة الرئيسية"
+
 }

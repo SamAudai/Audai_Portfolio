@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { flyInOut } from '../animations/app-animations';
 
 @Component({
@@ -12,37 +12,11 @@ import { flyInOut } from '../animations/app-animations';
   animations: [flyInOut()]
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  source: string[] = ['Software Engineer', 'Full Stack Web Developer', 'Desktop Application Developer'];
-  sourceIndex: number = 0;
-  sourceCurrent: string = '';
-
-  isText: boolean = false;
+  image:string = 'assets/image/profile-pic (2).png';
 
   constructor() { }
-
-  ngOnInit(): void {
-
-   this.setSkill();
-    setInterval(() => {
-      this.changeSkill();
-    }, 4000);
-
-  }
-
-  setSkill(): void {
-    this.sourceCurrent = this.source[this.sourceIndex];
-  }
-
-  changeSkill(): void {
-    this.sourceIndex++;
-    if (this.sourceIndex >= this.source.length) {
-      this.sourceIndex = 0;
-    }
-    this.setSkill();
-    
-  } 
 
 }
 

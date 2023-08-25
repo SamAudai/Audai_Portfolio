@@ -1,0 +1,12 @@
+<div class="service-content">
+        
+    <div class="row" *ngFor="let item of SERVICE">
+        <div class="s s-one">
+            <img src="{{item.image}}">
+        </div>
+        <h3>{{item.title | translate}}</h3>
+        <h5 translate>Starts From <span>{{item.price | translate}}</span></h5>
+        <p>{{item.description | translate }}</p>
+    </div>
+
+</div>

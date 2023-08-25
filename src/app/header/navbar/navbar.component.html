@@ -1,0 +1,7 @@
+<a class="fas fa-bars menu-icon" (click)="toggleMenu()"></a>
+<ul class="navlist" [class.active]="isMenuOpen"><!-- [ngClass]="{'active': isMenuOpen}" -->
+    <li *ngFor="let item of NAVITEM">
+        <a [routerLink]="item.link" routerLinkActive="active" (click)="toggleMenu()">{{item.name | translate}}</a>
+    </li>
+           
+</ul> 

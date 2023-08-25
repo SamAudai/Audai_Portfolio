@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root', //Singleton Design Patterns
 })
-export class LanguageService {
+
+export class LanguageService  {
 
   constructor(public translateService: TranslateService) {
     this.translateService.addLangs(['en', 'ar']);
@@ -21,8 +22,7 @@ export class LanguageService {
 
   //Called for change theme mode (dark/light)
   changeTheme(theme: any) {
-    localStorage.setItem("theme", theme);
-          
+    localStorage.setItem("theme", theme);          
   }
 
 }

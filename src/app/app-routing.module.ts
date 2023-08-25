@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './home/about/about.component';
-import { ContactComponent } from './home/contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { PortfolioComponent } from './home/portfolio/portfolio.component';
-import { ServicesComponent } from './home/service_/services.component';
-
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ServicesComponent } from './service_/services.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
@@ -32,6 +32,11 @@ const routes: Routes = [
     path:'', 
     redirectTo:'home', 
     pathMatch:'full'
+  },
+  {
+    path: '**',
+    component: PagenotfoundComponent
+    //redirectTo:'home'
   }
 ]
 

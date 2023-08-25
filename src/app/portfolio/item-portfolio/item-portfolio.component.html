@@ -1,0 +1,16 @@
+<div class="portfolio-content ">
+  <div class="card" *ngFor="let item of PORTFOLIO">
+    <div class="card-inner">
+      <div class="front-side">
+        <img src="{{item.image}}" alt="">
+        <h2>{{item.title | translate}}</h2>
+      </div>
+      <div class="back-side">
+        <p>{{item.description | translate}}</p>
+        <div class="social">
+          <a href="{{item.link}}" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
